@@ -7,4 +7,5 @@ Rails.application.routes.draw do
   root to: 'homes#top'
 
   resources :user, only: [:index, :show, :edit, :update, :destroy]
+  resources :post, only:[:create, :update]
 end

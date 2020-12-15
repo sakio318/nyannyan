@@ -13,6 +13,7 @@
 ActiveRecord::Schema.define(version: 2020_12_14_054236) do
 
   create_table "posts", force: :cascade do |t|
+    t.string "title"
     t.text "text"
     t.string "img"
     t.integer "user_id"

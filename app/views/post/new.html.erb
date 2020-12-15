@@ -1,2 +1,13 @@
 <h1>Post#new</h1>
 <p>Find me in app/views/post/new.html.erb</p>
+
+<h2>新規投稿</h2>
+<%= form_with model: @new_post, url: '/post',local:true do |f| %>
+  <h4>たいとる</h4>
+  <%= f.text_field :title %>
+  <h4>ほんぶん</h4>
+  <%= f.text_field :text %>
+  <h4>しゃしん</h4>
+  <%= f.text_field :img %>
+  <%= f.submit %>
+<% end %>
